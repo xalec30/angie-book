@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angie's Book</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/htmx.min.js"></script>
+    <script src="./assets/js/jquery.min.1.7.js"></script>
+    <script src="./assets/js/turn.min.js"s></script>
+</head>
+<body>
+    <div id="flipbook">
+        <div class="hard"> Turn.js </div>
+        <div class="hard"></div>
+        <div> Page 1 </div>
+        <div> Page 2 </div>
+        <div> Page 3 </div>
+        <div> Page 4 </div>
+        <div class="hard"></div>
+    </div>
+</body>
+<script type="text/javascript">
+    $("#flipbook").turn({
+		width: 500,
+		height: 500,
+		autoCenter: true
+	});
+</script>
+</html>
